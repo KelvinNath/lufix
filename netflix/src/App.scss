@@ -1,0 +1,136 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Roboto:wght@100..900&display=swap');
+
+
+.header {
+    height: 80px;
+    background-color: black;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    img {
+        height: 250%;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: 2vmax;
+
+        > a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: #f23107; 
+            }
+        }
+    }
+
+    > svg {
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    // Responsive Navbar
+    @media (max-width: 768px) {
+        height: 70px;
+        padding: 1rem;
+
+        div {
+            display: none; // Hide links in small screens
+        }
+
+        img {
+            height: 50%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        height: 60px;
+        padding: 0.8rem;
+
+        img {
+            height: 40%;
+        }
+
+        > svg {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// TV Shows Section
+.tvshows {
+    background-color: #f23107;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    h1 {
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+}
+.contact{
+    background-color: #f23107;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    h1 {
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+}
