@@ -1,0 +1,119 @@
+.footer {
+    background-color: black;
+    color: #757575;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    width: 100%;
+    
+    .footer-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      
+      .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        
+        p {
+          font-size: 1rem;
+        }
+        
+        .social-links {
+          display: flex;
+          gap: 1.5rem;
+          
+          a {
+            color: #757575;
+            font-size: 1.2rem;
+            transition: color 0.2s;
+            
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+      
+      .footer-links {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin-bottom: 2rem;
+        
+        .links-column {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          
+          a {
+            text-decoration: none;
+            color: #757575;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+            
+            &:hover {
+              color: white;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      
+      .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+        .language-selector {
+          select {
+            background-color: black;
+            color: #757575;
+            padding: 0.5rem 1rem;
+            border: 1px solid #757575;
+            border-radius: 2px;
+            
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .footer-content {
+        .footer-top {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+        }
+        
+        .footer-links {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .footer-content {
+        .footer-links {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: black;
+    color: #757575;
+    padding: 2rem 0;
+    margin-top: 0; /* Change this from 3rem to 0 */
+    width: 100%;
+    /* rest of your footer styles */
+  }
