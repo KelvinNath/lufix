@@ -19,7 +19,7 @@ const SignUp = () => {
     setError("");
 
     try {
-      const response = await axios.post(`http://localhost:5000/api/auth/register`, {
+      const response = await axios.post(`${process.env.BACKEND_URL}/api/auth/register`, {
         name,
         email,
         password
